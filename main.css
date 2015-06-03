@@ -1,0 +1,228 @@
+/******************************************************
+ ELEMENTS
+ ******************************************************/
+body {
+	font-family: 'Open Sans', sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #eef2ee;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+
+h1 {
+	font-family: 'Armata', sans-serif;
+	margin: 1em 0;
+	font-size: 1.75em;
+	font-weight: normal;
+}
+
+h2 {
+	font-family: 'Handlee', cursive;
+	margin: 0.5em 0;
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+h3 {
+	margin: 0 0 1em 0;
+	color: #606060;
+	font-family: 'Roboto Slab', serif;
+}
+
+/******************************************************
+HEADER
+ ******************************************************/
+ header {
+	background-color: #599a68;
+	border-style: solid;
+	border-width: thin;
+	border-color: #000;
+	border-radius: 20px;
+	margin: 0 0 30px 0;
+	width: 100%;
+}
+
+header {
+	text-align: center;
+	clear: both;
+	margin: 0;
+}
+
+header h1 {
+	color: #FFFACD;
+}
+
+header h2 {
+	color: #00FFFF;
+}
+
+/******************************************************
+ NAV
+ ******************************************************/
+
+nav {
+	background-color: #6ab47b;
+	text-align: center;
+ 	margin: 20px 0 0;
+	padding: 10px 0;
+	width: 100%;
+	border-style: solid;
+	border-width: thin;
+	border-color: #000;
+}
+
+nav ul {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	display: inline-block;
+	margin: 10px 0;
+}
+
+nav a {
+	color: #fff;
+	font-weight: 800;
+	padding: 15px 10px;
+}
+
+nav a:hover {
+	background-color: #108070; 
+}
+
+/******************************************************
+ WRAPPER
+ ******************************************************/
+#wrapper {
+	margin: 0 auto;
+	padding: 2.5% 5% 0;
+}
+
+/******************************************************
+ RESUME BODY
+ ******************************************************/
+ #resumeBody{
+ 	border-style: dashed;
+	border-width: thin;
+	border-color: #000;
+ }
+
+ #resumeBody >ul{
+ 	margin: 0 auto;
+ 	padding: 0;
+ }
+
+ .decoratedList ul{
+ 	list-style-type: square;
+ }
+ 	/******************************************************
+	 EDUCATION
+	 ******************************************************/
+ #education ul li{
+  	margin: 0;
+  	padding: 0;
+ }
+
+ /******************************************************
+ SIDE PANEL
+ ******************************************************/
+ #sidePanel {
+ 	border-style: solid;
+	border-width: thin;
+	background-color: #6ab47b;
+	margin: 0 auto;
+ }
+
+.contact-info{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-size: 0.9em;
+}
+
+.contact-info a {
+	color: #fff;
+	display: block;
+	min-height: 20px;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+	padding: 0 0 0 30px;
+	margin: 0 0 10px; 
+}
+
+.contact-info li.phone a{
+	background-image: url('img/phone.png');
+}
+
+.contact-info li.email a{
+	background-image: url('img/email.png');	
+}
+
+.contact-info li.twitter a{
+	background-image: url('img/twitter_msg.png');
+}
+
+/******************************************************
+ FOOTER
+ ******************************************************/
+footer{
+	background-color: #FAF0E6;
+	font-size: 0.75em;
+	text-align: center;
+	clear: both;
+	padding: 50px 0 0;
+	color: #A0A0A0;
+	border-style: dotted;
+	border-width: thin;
+	border-color: #000;
+	border-radius: 20px;
+}
+
+/******************************************************
+ RESPONSIVE
+ ******************************************************/
+
+@media screen and (min-width: 1110px) {
+	/******************************************************
+	 THREE COLUMN LAYOUT
+	 ******************************************************/
+
+	section {
+		display: inline-block;
+		margin: 0 2.5%;
+	}
+
+	#navigation {
+		width: 10%;
+		float: left;
+	}
+
+	#navigation ul {
+		display: block;
+		vertical-align: top;
+	}
+
+	nav {
+		margin: 25% auto 0;
+	}
+
+	#resumeBody{
+		width: 70%;
+		float: left;
+	}
+
+	#sidePanel {
+		width: 12.5%;
+		float: left;
+	}
+}
